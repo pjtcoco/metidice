@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@fontsource/manrope": "^4.5.13",
+    "@fontsource/open-sans": "^4.5.14",
+    "@storybook/addon-a11y": "^6.5.16",
     "@types/node": "18.14.2",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -19,5 +24,19 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.61",
+    "@storybook/addon-interactions": "^7.0.0-beta.61",
+    "@storybook/addon-links": "^7.0.0-beta.61",
+    "@storybook/addon-styling": "^0.3.0",
+    "@storybook/blocks": "^7.0.0-alpha.8",
+    "@storybook/nextjs": "^7.0.0-beta.61",
+    "@storybook/react": "^7.0.0-beta.61",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "@types/sass": "^1.45.0",
+    "eslint-plugin-storybook": "^0.6.11",
+    "sass": "^1.58.3",
+    "storybook": "^7.0.0-beta.61"
   }
 }

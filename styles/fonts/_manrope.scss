@@ -1,0 +1,13 @@
+@use "~@fontsource/manrope/scss/mixins" as Manrope;
+
+$weights: 200, 300, 400, 500, 600, 700, 800;
+
+@each $weight in $weights {
+  $name: "Manrope #{$weight}";
+
+  @if $weight == 400 {
+    $name: "Manrope";
+  }
+
+  @include Manrope.fontFace($fontName: $name, $weight: $weight);
+}
