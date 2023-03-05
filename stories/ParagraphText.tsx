@@ -7,7 +7,7 @@ interface ParagraphProps {
 
 const ParagraphText: React.FC<ParagraphProps> = ({ children, variant, textContent }) => {
   return (
-    <p className={`paragraph__${variant}`}>
+    <p className={`ensome__paragraph__${variant}`}>
       {textContent}
       {children}
     </p>

@@ -7,7 +7,7 @@ interface HeadlineProps {
 
 const HeadlineText: React.FC<HeadlineProps> = ({ children, variant, textContent }) => {
   return (
-    <h6 className={`headline__${variant}`}>
+    <h6 className={`ensome__headline__${variant}`}>
       {textContent}
       {children}
     </h6>

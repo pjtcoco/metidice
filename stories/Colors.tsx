@@ -1,6 +1,6 @@
 import React from "react";
-interface ColorProps {
-  color: "primary" | "white" | "secondary" | "tertiary" | "helperBlue1" | "helperBlue2" | "helperBlue3" | "black" | "grey" | "background" | "error";
+export interface ColorProps {
+  color?: "primary" | "white" | "secondary" | "tertiary" | "helperBlue1" | "helperBlue2" | "helperBlue3" | "black" | "grey" | "background" | "error";
 }
 
 const Colors: React.FC<ColorProps> = ({ color }) => {
