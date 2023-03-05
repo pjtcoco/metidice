@@ -1,14 +1,14 @@
 import React from "react";
 interface HeadlineProps {
   children?: React.ReactNode;
-  // variant: string;
-  variant: "h1"|"h2"|"h3"|"h4"|"h5"|"h6"|"h7-r"|"h7-b"|"h8";
+  variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "h7-r" | "h7-b" | "h8";
+  textContent: string;
 }
 
-const HeadlineText: React.FC<HeadlineProps> = ({ children, variant }) => {
+const HeadlineText: React.FC<HeadlineProps> = ({ children, variant, textContent }) => {
   return (
     <h6 className={`headline__${variant}`}>
-      Headline1
+      {textContent}
       {children}
     </h6>
   );

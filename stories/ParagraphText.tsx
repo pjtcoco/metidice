@@ -1,11 +1,17 @@
-import React from 'react'
-
-const ParagraphText = () => {
-  return (
-    <p>
-      hello
-    </p>
-  )
+import React from "react";
+interface ParagraphProps {
+  children?: React.ReactNode;
+  variant: "p1" | "p2-r" | "p2-b" | "p3-r" | "p3-b";
+  textContent: string;
 }
 
-export default ParagraphText
+const ParagraphText: React.FC<ParagraphProps> = ({ children, variant, textContent }) => {
+  return (
+    <p className={`paragraph__${variant}`}>
+      {textContent}
+      {children}
+    </p>
+  );
+};
+
+export default ParagraphText;
