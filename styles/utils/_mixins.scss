@@ -92,8 +92,13 @@
 @mixin iconsize($size: 2rem, $color: variables.$black) {
   svg {
     @include size($size);
-    path, g.path {
+    path,
+    g.path {
       fill: $color;
+    }
+
+    g{
+      mix-blend-mode: multiply;
     }
     // g {
     //   path {

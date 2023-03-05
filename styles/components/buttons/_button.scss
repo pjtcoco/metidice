@@ -4,6 +4,7 @@
 .test{
   @include mixins.flex;
   column-gap: 1rem;
+  flex-wrap: wrap;
 
   button {
     @include mixins.size(19rem, 5.4rem);
