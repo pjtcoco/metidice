@@ -1,0 +1,39 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.color {
+  &__container {
+    @include mixins.size(24.8rem, 14.4rem);
+    border-radius: 0.6rem;
+  }
+  &__primary {
+    background-color: variables.$primary;
+  }
+  &__secondary {
+    background-color: variables.$secondary;
+  }
+  &__tertiary {
+    background-color: variables.$tertiary;
+  }
+  &__helperBlue1 {
+    background-color: variables.$helperBlue1;
+  }
+  &__helperBlue2 {
+    background-color: variables.$helperBlue2;
+  }
+  &__helperBlue3 {
+    background-color: variables.$helperBlue3;
+  }
+  &__black {
+    background-color: variables.$black;
+  }
+  &__grey {
+    background-color: variables.$grey;
+  }
+  &__background {
+    background-color: variables.$background;
+  }
+  &__error {
+    background-color: variables.$error;
+  }
+}
