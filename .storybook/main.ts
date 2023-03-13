@@ -20,6 +20,7 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/nextjs",
+    
     options: {},
   },
   docs: {
