@@ -1,1 +1,0 @@
-npx sb init --builder webpack5
