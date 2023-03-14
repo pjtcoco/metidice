@@ -43,7 +43,6 @@ import IsometricTrendingLinesIcon from "@/components/icons/IsometricTrendingLine
 import KeyIcon from "@/components/icons/KeyIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import LocationIcon from "@/components/icons/LocationIcon";
-import MailIcon from "@/components/icons/MailIcon";
 import MinusIcon from "@/components/icons/MinusIcon";
 import NavigationIcon from "@/components/icons/NavigationIcon";
 import PersonIcon from "@/components/icons/PersonIcon";
@@ -60,11 +59,9 @@ import React from "react";
 interface ButtonProps {
   state: boolean;
 }
-const Button: React.FC<ButtonProps> = ({ state }) => {
+const Icons: React.FC<ButtonProps> = ({ state }) => {
   return (
     <div className="test">
-      <button type="submit">Learn more</button>
-      <MailIcon />
       <LocationIcon color="error" />
       <DividerIcon color="primary" />
       <TagIcon />
@@ -131,4 +128,4 @@ const Button: React.FC<ButtonProps> = ({ state }) => {
   // );
 };
 
-export default Button;
+export default Icons;
