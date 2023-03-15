@@ -5,9 +5,8 @@ interface TasbSwitchProps {
 }
 const TabSwitch: React.FC<TasbSwitchProps> = ({ size = "medium" }) => {
   const handleSwitch = (e: Event) => {
-    // setActive(active ? false : true);
     const el = e.target as HTMLButtonElement;
-    console.log("has?: ", e);
+  
     if (el.id === "switch1" && activeOne === true && activeTwo === true) {
     }
     if (el.id === "switch1" && activeOne === false && activeTwo === false) {
@@ -22,9 +21,7 @@ const TabSwitch: React.FC<TasbSwitchProps> = ({ size = "medium" }) => {
       setActiveOne(false);
       setActiveTwo(true);
     }
-    // if (el.className.includes("primary")) {
-    //   setActiveOne(true);
-    // }
+  
   };
   const [activeOne, setActiveOne] = React.useState(true);
   const [activeTwo, setActiveTwo] = React.useState(true);
