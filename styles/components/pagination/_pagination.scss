@@ -3,7 +3,6 @@
 
 .ensome__pagination {
   /****************** links **********************/
-
   &__link {
     @include mixins.size(9.235rem, 2.4rem);
     font-family: "Manrope", sans-serif;
@@ -43,8 +42,8 @@
     &-largeprimary,
     &-largetertiary {
       box-shadow: none;
-
-      @include mixins.formatText(400, 1.3rem, 2.4rem);
+      cursor: pointer;
+       @include mixins.formatText(400, 1.3rem, 2.4rem);
     }
 
     //small
@@ -67,7 +66,6 @@
       color: variables.$primary;
     }
 
-
     //medium
     &-medium,
     &-mediumprimary,
@@ -89,6 +87,25 @@
     &-largetertiary {
       background-color: variables.$tertiary;
       color: variables.$black;
+    }
+  }
+
+  /****************** TabSwitch **********************/
+  &__switch {
+    //mobile
+    &-medium,
+    &-large {
+      background-color: variables.$tertiary;
+
+      @include mixins.size(19rem, 4rem);
+      border-radius: 14px;
+      @include mixins.flex;
+      column-gap: 0rem;
+    }
+    //desktop
+    &-large {
+      @include mixins.size(25.5rem, 5rem);
+      border-radius: 20px;
     }
   }
 }
