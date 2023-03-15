@@ -65,7 +65,7 @@ const Icons: React.FC<ButtonProps> = ({ state }) => {
       <LocationIcon color="error" />
       <DividerIcon color="primary" />
       <TagIcon />
-      <PlayCircleIcon color="primary" />
+      <PlayCircleIcon color="error" />
       <ShareIcon color="error" />
       <PersonIcon />
       <CalenderIcon />
@@ -105,20 +105,20 @@ const Icons: React.FC<ButtonProps> = ({ state }) => {
       <DataAreaIcon />
       <DataPieIcon />
       <DataWhiskerIcon />
-      <DatabaseIcon/>
-      <KeyIcon/>
-      <IsometricBotIcon/>
-      <IsometricBot3DIcon/>
-      <IsometricBrainIcon/>
-      <IsometricBrain3DIcon/>
-      <IsometricDataAreaLienIcon/>
-      <IsometricDataAreaLien3DIcon/>
-      <IsometricDataPieIcon/>
-      <IsometricDataPie3DIcon/>
-      <IsometricKeyIcon/>
-      <IsometricKey3DIcon/>
-      <IsometricTrendingLinesIcon/>
-      <IsometricTrendingLines3DIcon/>
+      <DatabaseIcon />
+      <KeyIcon />
+      <IsometricBotIcon />
+      <IsometricBot3DIcon />
+      <IsometricBrainIcon />
+      <IsometricBrain3DIcon />
+      <IsometricDataAreaLienIcon />
+      <IsometricDataAreaLien3DIcon />
+      <IsometricDataPieIcon />
+      <IsometricDataPie3DIcon />
+      <IsometricKeyIcon />
+      <IsometricKey3DIcon />
+      <IsometricTrendingLinesIcon />
+      <IsometricTrendingLines3DIcon />
     </div>
   );
   //   <>

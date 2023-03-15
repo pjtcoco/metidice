@@ -87,6 +87,7 @@
   &__error {
     background-color: variables.$error;
   }
+  
 }
 
 @mixin iconsize($size: 2rem, $color: variables.$black) {
@@ -97,7 +98,7 @@
       fill: $color;
     }
 
-    g{
+    g[class~='3d']{
       mix-blend-mode: multiply;
     }
     // g {
@@ -138,6 +139,9 @@
   }
   &__error {
     @include iconsize($size, variables.$error);
+  }
+  &__white {
+    @include iconsize($size, variables.$white);
   }
 }
 

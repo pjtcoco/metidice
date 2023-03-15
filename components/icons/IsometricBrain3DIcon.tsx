@@ -20,7 +20,7 @@ const IsometricBrain3DIcon = () => {
             strokeLinejoin="round"
           />
         </g>
-        <g filter="url(#filter1_f_220_14885)">
+        <g className="3d" filter="url(#filter1_f_220_14885)">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
