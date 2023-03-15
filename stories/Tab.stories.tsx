@@ -9,6 +9,9 @@ const meta: Meta<typeof Tab> = {
     size: {
       control: "text",
     },
+    color: {
+      control: "text",
+    },
     label: {
       control: "text",
     },
@@ -41,10 +44,25 @@ export const Medium: Story = {
     label: "Monthly",
   },
 };
+export const MediumTertiary: Story = {
+  args: {
+    label: "Monthly",
+    color: "tertiary",
+  },
+};
 
 export const Large: Story = {
   args: {
     size: "large",
     label: "Monthly",
+    outlined: true,
+
+  },
+};
+export const LargeTertiary: Story = {
+  args: {
+    size: "large",
+    label: "Monthly",
+    color: "tertiary",
   },
 };
