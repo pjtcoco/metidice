@@ -58,7 +58,7 @@ import YoutubeIcon from "@/components/icons/YoutubeIcon";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Icons from "./Icons";
-import MailIcon from "./MailIcon";
+import MailIcon from "../components/icons/MailIcon";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof Icons> = {
@@ -73,184 +73,182 @@ type Story = StoryObj<typeof Icons>;
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 export const All: Story = {
- args:{}
- 
+  args: {},
 };
 export const ArrowChevronDown: Story = {
-  render: () => <ArrowChevronDownIcon/>
+  render: () => <ArrowChevronDownIcon />,
 };
 export const ArrowChevronLeft: Story = {
-  render: () => <ArrowChevronLeftIcon/>
+  render: () => <ArrowChevronLeftIcon />,
 };
 export const ArrowChevronRight: Story = {
-  render: () => <ArrowChevronRightIcon/>
+  render: () => <ArrowChevronRightIcon />,
 };
 export const ArrowChevronUp: Story = {
-  render: () => <ArrowChevronUpIcon/>
+  render: () => <ArrowChevronUpIcon />,
 };
 export const ArrowDown: Story = {
-  render: () => <ArrowDownIcon/>
+  render: () => <ArrowDownIcon />,
 };
 export const ArrowLeft: Story = {
-  render: () => <ArrowLeftIcon/>
+  render: () => <ArrowLeftIcon />,
 };
 export const ArrowRight: Story = {
-  render: () => <ArrowRightIcon/>
+  render: () => <ArrowRightIcon />,
 };
 export const ArrowTrendingLines: Story = {
-  render: () => <ArrowTrendingLinesIcon/>
+  render: () => <ArrowTrendingLinesIcon />,
 };
 export const ArrowUp: Story = {
-  render: () => <ArrowUpIcon/>
+  render: () => <ArrowUpIcon />,
 };
 export const Behance: Story = {
-  render: () => <BehanceIcon/>
+  render: () => <BehanceIcon />,
 };
 export const Board: Story = {
-  render: () => <BoardIcon/>
+  render: () => <BoardIcon />,
 };
 export const BookDatabase: Story = {
-  render: () => <BookDatabaseIcon/>
+  render: () => <BookDatabaseIcon />,
 };
 export const Bot: Story = {
-  render: () => <BotIcon/>
+  render: () => <BotIcon />,
 };
 export const BrainCircuit: Story = {
-  render: () => <BrainCircuitIcon/>
+  render: () => <BrainCircuitIcon />,
 };
 export const CalendarData: Story = {
-  render: () => <CalendarDataIcon/>
+  render: () => <CalendarDataIcon />,
 };
 export const Calender: Story = {
-  render: () => <CalenderIcon/>
+  render: () => <CalenderIcon />,
 };
 export const Call: Story = {
-  render: () => <CallIcon/>
+  render: () => <CallIcon />,
 };
 export const CheckMark: Story = {
-  render: () => <CheckMarkIcon/>
+  render: () => <CheckMarkIcon />,
 };
 export const Circle: Story = {
-  render: () => <CircleIcon/>
+  render: () => <CircleIcon />,
 };
 export const ClipboardData: Story = {
-  render: () => <ClipboardDataIcon/>
+  render: () => <ClipboardDataIcon />,
 };
 export const Comment: Story = {
-  render: () => <CommentIcon/>
+  render: () => <CommentIcon />,
 };
 export const DataArea: Story = {
-  render: () => <DataAreaIcon/>
+  render: () => <DataAreaIcon />,
 };
 export const Database: Story = {
-  render: () => <DatabaseIcon/>
+  render: () => <DatabaseIcon />,
 };
 export const DataLine: Story = {
-  render: () => <DataLineIcon/>
+  render: () => <DataLineIcon />,
 };
 export const DataPie: Story = {
-  render: () => <DataPieIcon/>
+  render: () => <DataPieIcon />,
 };
 export const DataWhisker: Story = {
-  render: () => <DataWhiskerIcon/>
+  render: () => <DataWhiskerIcon />,
 };
 export const Dismiss: Story = {
-  render: () => <DismissIcon/>
+  render: () => <DismissIcon />,
 };
 export const Dribble: Story = {
-  render: () => <DribbleIcon/>
+  render: () => <DribbleIcon />,
 };
 export const Facebook: Story = {
-  render: () => <FacebookIcon/>
+  render: () => <FacebookIcon />,
 };
 export const Google: Story = {
-  render: () => <GoogleIcon/>
+  render: () => <GoogleIcon />,
 };
 export const IsometricBot3D: Story = {
-  render: () => <IsometricBot3DIcon/>
+  render: () => <IsometricBot3DIcon />,
 };
 export const IsometricBot: Story = {
-  render: () => <IsometricBotIcon/>
+  render: () => <IsometricBotIcon />,
 };
 export const IsometricBrain3D: Story = {
-  render: () => <IsometricBrain3DIcon/>
+  render: () => <IsometricBrain3DIcon />,
 };
 export const IsometricBrain: Story = {
-  render: () => <IsometricBrainIcon/>
+  render: () => <IsometricBrainIcon />,
 };
 export const IsometricDataAreaLien3D: Story = {
-  render: () => <IsometricDataAreaLien3DIcon/>
+  render: () => <IsometricDataAreaLien3DIcon />,
 };
 export const IsometricDataAreaLien: Story = {
-  render: () => <IsometricDataAreaLienIcon/>
+  render: () => <IsometricDataAreaLienIcon />,
 };
 export const IsometricDataPie3D: Story = {
-  render: () => <IsometricDataPie3DIcon/>
+  render: () => <IsometricDataPie3DIcon />,
 };
 export const IsometricDataPie: Story = {
-  render: () => <IsometricDataPieIcon/>
+  render: () => <IsometricDataPieIcon />,
 };
 export const IsometricKey3D: Story = {
-  render: () => <IsometricKey3DIcon/>
+  render: () => <IsometricKey3DIcon />,
 };
 export const IsometricKey: Story = {
-  render: () => <IsometricKeyIcon/>
+  render: () => <IsometricKeyIcon />,
 };
 export const IsometricTrendingLines3D: Story = {
-  render: () => <IsometricTrendingLines3DIcon/>
+  render: () => <IsometricTrendingLines3DIcon />,
 };
 export const IsometricTrendingLines: Story = {
-  render: () => <IsometricTrendingLinesIcon/>
+  render: () => <IsometricTrendingLinesIcon />,
 };
 // export const IsometricTrendingLines: Story = {
 //   render: () => <IsometricTrendingLinesIcon/>
 // };
 export const Key: Story = {
-  render: () => <KeyIcon/>
+  render: () => <KeyIcon />,
 };
 export const Linkedin: Story = {
-  render: () => <LinkedinIcon/>
+  render: () => <LinkedinIcon />,
 };
 export const Location: Story = {
-  render: () => <LocationIcon/>
+  render: () => <LocationIcon />,
 };
 export const Mail: Story = {
-  render: () => <MailIcon/>
+  render: () => <MailIcon />,
 };
 export const Minus: Story = {
-  render: () => <MinusIcon/>
+  render: () => <MinusIcon />,
 };
 export const Navigation: Story = {
-  render: () => <NavigationIcon/>
+  render: () => <NavigationIcon />,
 };
 export const Person: Story = {
-  render: () => <PersonIcon/>
+  render: () => <PersonIcon />,
 };
 export const PlayCircle: Story = {
-  render: () => <PlayCircleIcon/>
+  render: () => <PlayCircleIcon />,
 };
 export const Plus: Story = {
-  render: () => <PlusIcon/>
+  render: () => <PlusIcon />,
 };
 export const Search: Story = {
-  render: () => <SearchIcon/>
+  render: () => <SearchIcon />,
 };
 export const Share: Story = {
-  render: () => <ShareIcon/>
+  render: () => <ShareIcon />,
 };
 export const Tag: Story = {
-  render: () => <TagIcon/>
+  render: () => <TagIcon />,
 };
 export const TimelineDesktop: Story = {
-  render: () => <TimelineDesktopIcon/>
+  render: () => <TimelineDesktopIcon />,
 };
 export const TimelineMobile: Story = {
-  render: () => <TimelineMobileIcon/>
+  render: () => <TimelineMobileIcon />,
 };
 export const Twitter: Story = {
-  render: () => <TwitterIcon/>
+  render: () => <TwitterIcon />,
 };
 export const Youtube: Story = {
-  render: () => <YoutubeIcon/>
+  render: () => <YoutubeIcon />,
 };
-
