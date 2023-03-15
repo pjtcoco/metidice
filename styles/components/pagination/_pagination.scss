@@ -1,0 +1,69 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.ensome__pagination {
+  /****************** links **********************/
+
+  &__link {
+    @include mixins.size(9.235rem, 2.4rem);
+    font-family: "Manrope", sans-serif;
+    @include mixins.formatText(500, 1.25rem, 2rem);
+    letter-spacing: 0.055rem;
+    @include mixins.flex;
+    column-gap: 0.35rem;
+    color: variables.$primary;
+    background-color: transparent;
+    box-shadow: none;
+    span svg path,
+    span svg g path {
+      fill: currentColor;
+    }
+    cursor: pointer;
+
+    &:hover {
+      color: variables.$secondary;
+    }
+    &:disabled {
+      color: variables.$grey;
+    }
+  }
+
+  /****************** tabs **********************/
+  &__tab {
+    &-small,
+    &-medium,
+    &-large,
+    &-small-outlined {
+    box-shadow: none;
+
+      @include mixins.formatText(500, 1.6rem, 2.4rem);
+    }
+
+    //small
+    &-small,
+    &-small-outlined {
+      @include mixins.size(4.1rem, 1.8rem);
+      border-radius: 6px;
+      font-size: 1.3rem;
+    }
+
+    //small and outlined
+    &-small-outlined {
+      border: 1px solid variables.$primary;
+      background-color: transparent;
+      color: variables.$primary;
+    }
+
+    //medium
+    &-medium {
+      @include mixins.size(9.4rem, 3.8rem);
+      border-radius: 14px;
+      font-size: 1.5rem;
+    }
+    //large
+    &-large {
+      border-radius: 20px;
+      @include mixins.size(12.5rem, 4.6rem);
+    }
+  }
+}

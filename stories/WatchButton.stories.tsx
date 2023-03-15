@@ -12,7 +12,7 @@ size:{
 disabled:{
   control:"boolean"
 },
-bordered:{
+outlined:{
   control:"boolean"
 },
 transparent:{
@@ -56,7 +56,7 @@ export const NoBackgroundAndSmallBordered: Story = {
     label: "Watch the demo",
     transparent:false,
     size:"small",
-    bordered: true
+    outlined: true
   },
 };
 export const NoBackgroundAndBig: Story = {
@@ -71,7 +71,7 @@ export const NoBackgroundAndBigBordered: Story = {
     label: "Watch the demo",
     transparent:false,
     size:"big",
-    bordered: true
+    outlined: true
   },
 };
 export const NoBackgroundDisabled: Story = {
@@ -86,6 +86,6 @@ export const NoBackgroundDisabledBordered: Story = {
     label: "Watch the demo",
     disabled: true,
     transparent:false,
-    bordered: true
+    outlined: true
   },
 };
