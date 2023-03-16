@@ -1,5 +1,7 @@
 "use client";
 
+import DesktopCard from "@/components/cards/DesktopCard";
+import IsometricBrain3DIcon from "@/components/icons/IsometricBrain3DIcon";
 import IntLink from "@/utils/IntLink";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -54,6 +56,9 @@ export default function Index() {
       <br />
 
       <h1>{t("title")}</h1>
+      <DesktopCard title="Machine Learning" icon={<IsometricBrain3DIcon  />} variant="variant3">
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure.
+      </DesktopCard>
     </>
   );
 }

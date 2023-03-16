@@ -2,7 +2,7 @@ import React from "react";
 import ArrowRightIcon from "../icons/ArrowRightIcon";
 interface TextLinkProps {
   hasArrow?: boolean;
-  disabled: boolean
+  disabled?: boolean
 }
 const TextLink:React.FC<TextLinkProps> = ({hasArrow = false,disabled=false}) => {
   return (

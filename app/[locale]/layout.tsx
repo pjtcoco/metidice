@@ -13,6 +13,7 @@
 //     </html>
 //   );
 // }
+import '../../styles/main.scss';
 
 import { NextIntlClientProvider } from "next-intl/client";
 import { notFound } from "next/navigation";
