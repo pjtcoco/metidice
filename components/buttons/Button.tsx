@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface ButtonProps {
-  disabled: boolean;
+  disabled?: boolean;
   label: string;
   size?: "small" | "big";
   rounded?: boolean;

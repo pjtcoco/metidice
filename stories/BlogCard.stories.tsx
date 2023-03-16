@@ -21,9 +21,9 @@ type Story = StoryObj<typeof BlogCard>;
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 export const Variant1_Big: Story = {
   args: {
-    variant: "variant1",
+    type: "variant1",
     // icon: <IsometricBrain3DIcon />,
-    children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+    date: "22 June 2022",
   },
 };
 export const Variant2_Medium: Story = {
@@ -35,29 +35,30 @@ export const Variant2_Medium: Story = {
 };
 export const Variant3_Small: Story = {
   args: {
-    variant: "variant3",
-    icon: <IsometricBrain3DIcon />,
+    type: "variant3",
     children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure.",
   },
 };
 export const Variant4_RightText: Story = {
   args: {
-    variant: "variant4",
-    icon: <BrainCircuitIcon />,
-    children: "At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.",
+    type: "variant4",
+    title: "Sed ut perspiciatis unde omnis at vero blanditils",
+    children:
+      "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
   },
 };
 export const Variant5_NoDescription: Story = {
   args: {
-    variant: "variant4",
-    icon: <BrainCircuitIcon />,
-    children: "At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.",
+    title: "ISO 13485 compliance of medical devices",
+    type: "variant5",
+    hasArrow: true,
+    // children: "At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.",
   },
 };
 export const Variant6_NoImage: Story = {
   args: {
-    variant: "variant4",
-    icon: <BrainCircuitIcon />,
+    tags: ["VPN", "Proxy"],
+    type: "variant6",
     children: "At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.",
   },
 };

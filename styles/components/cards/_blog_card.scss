@@ -5,23 +5,78 @@
   &__variant1,
   &__variant2,
   &__variant3,
-  &__variant4 {
+  &__variant4,
+  &__variant5,
+  &__variant6 {
     @include mixins.flex(column);
     align-items: flex-start;
-    padding: 2.5rem;
-    gap: 1.5rem;
-    @include mixins.size(25.5rem, 24.8rem);
+    padding: 3rem 3.5rem 4.5rem;
+    gap: 2rem;
+    @include mixins.size(35rem, 33.1rem);
     background: variables.$white;
     box-shadow: variables.$shadowCard3;
     border-radius: 6px;
 
+    div {
+      @include mixins.flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    section {
+      @include mixins.flex(column);
+      gap: 2rem;
+      align-items: flex-start;
+    }
     p {
+      letter-spacing: -0.015em;
       color: variables.$grey;
-      font-family: "Open Sans 700", sans-serif;
-      font-weight: 300;
     }
   }
 
+  /****************** variant5 **********************/
+  &__variant5,
+  &__variant4 {
+    align-items: center;
+    padding: 0px;
+    @include mixins.flex;
+    @include mixins.size(44.5rem, 12.2rem);
+    #card_image {
+      @include mixins.size(19rem, 11.4rem);
+      background: url(/public/images/v5.png);
+      border-radius: 6px;
+    }
+    section {
+      align-items: flex-start;
+      padding: 0px;
+      gap: 1rem;
+      @include mixins.size(23.5rem, 12.2rem);
+
+      p {
+        margin: 0;
+      }
+      h6 {
+        @include mixins.formatText(700, 1.6rem, 2.4rem);
+      }
+    }
+  }
+  /****************** variant4 **********************/
+  &__variant4 {
+    @include mixins.size(63.5rem, 18.5rem);
+    align-items: center;
+    #card_image {
+      @include mixins.size(21.5rem, 17.1rem);
+      background: url(/public/images/v4.png);
+    }
+
+    section {
+      width: 400px;
+      height: 185px;
+
+      p {
+        @include mixins.formatText(400, 1.6rem, 2.8rem);
+      }
+    }
+  }
   /****************** variant3 **********************/
   &__variant3 {
     padding: 2rem 3.5rem;
@@ -73,6 +128,8 @@
   }
   /****************** variant1 **********************/
   &__variant1 {
+    @include mixins.size(63.5rem, 49.8rem);
+
     padding: 4.6rem 3.5rem;
     gap: 3rem;
     @include mixins.size(35rem, 35.3rem);
