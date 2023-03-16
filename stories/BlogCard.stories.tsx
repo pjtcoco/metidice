@@ -22,20 +22,23 @@ type Story = StoryObj<typeof BlogCard>;
 export const Variant1_Big: Story = {
   args: {
     type: "variant1",
-    // icon: <IsometricBrain3DIcon />,
+    hasArrow: true,
     date: "22 June 2022",
+    children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...",
   },
 };
 export const Variant2_Medium: Story = {
   args: {
-    variant: "variant2",
-    // icon: <IsometricBrain3DIcon />,
+    type: "variant2",
+    tags: ["App", "CIO", "Future"],
     children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
   },
 };
 export const Variant3_Small: Story = {
   args: {
+    title: "Staffing software: key capabilities and top products",
     type: "variant3",
+    hasArrow: true,
     children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure.",
   },
 };
@@ -59,6 +62,6 @@ export const Variant6_NoImage: Story = {
   args: {
     tags: ["VPN", "Proxy"],
     type: "variant6",
-    children: "At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.",
+    children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti...",
   },
 };

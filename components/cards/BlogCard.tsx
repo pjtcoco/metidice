@@ -14,7 +14,7 @@ interface BlogCardProps extends CardProps {
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ hasArrow, tags, hasTags, date, type = "variant2", title, children, url }) => {
-  const condition6 = type === "variant6" && tags?.length;
+  const condition6 = type === "variant6" ||  type === "variant2" && tags?.length;
   const arrowCondition = type === "variant2" || type === "variant3";
   return (
     <article className={`ensome__blogcard__${type}`}>
