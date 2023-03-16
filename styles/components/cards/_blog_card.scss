@@ -1,6 +1,6 @@
 @use "../../utils/mixins";
 @use "../../utils/variables";
-.ensome__card {
+.ensome__blogcard {
   /****************** variant4 **********************/
   &__variant1,
   &__variant2,
@@ -30,7 +30,6 @@
 
     //mobile versions
     @media only screen and (width <= 42rem) {
-      background:red;
       padding: 3rem 2.5rem;
       @include mixins.size(32.8rem, 35.6rem);
       p {
@@ -41,7 +40,7 @@
       }
     }
     @media only screen and (width <= 32rem) {
-      background: #000;
+      align-self: center;
       padding: 3rem 1.5rem;
       @include mixins.size(30rem, 33.6rem);
       p {
@@ -77,5 +76,17 @@
     padding: 4.6rem 3.5rem;
     gap: 3rem;
     @include mixins.size(35rem, 35.3rem);
+    @media only screen and (width <= 42rem) {
+      @include mixins.size(27.2rem, 30.2rem);
+      span.ensome__icon_data__primary {
+        padding: 1rem;
+      }
+      h3 {
+        @include mixins.formatText(700, 2rem, 3rem);
+      }
+      p {
+        @include mixins.formatText(400, 1.4rem, 2.4rem);
+      }
+    }
   }
 }

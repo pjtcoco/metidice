@@ -17,6 +17,9 @@
     span svg g path {
       fill: currentColor;
     }
+    span:last-child {
+      margin-top: 0.65rem;
+    }
 
     &:hover {
       color: variables.$secondary;
@@ -190,7 +193,7 @@
       }
     }
     &--footer {
-     padding: 1rem 2rem;
+      padding: 1rem 2rem;
       //light
       // background-color: variables.$tertiary;
 
@@ -203,18 +206,17 @@
       }
       &::after {
         background-color: variables.$helperBlue3;
-
       }
-      &-active{
-  //light
-  color: variables.$helperBlue3;
-  //dark
-  // color: variables.$white;
-  // &::after {
-  //   // width: 100%;
-  //   @include mixins.size(100%, 3px);
-  // }
-  @include mixins.formatText(400, 1.6rem, 2.4rem);
+      &-active {
+        //light
+        color: variables.$helperBlue3;
+        //dark
+        // color: variables.$white;
+        // &::after {
+        //   // width: 100%;
+        //   @include mixins.size(100%, 3px);
+        // }
+        @include mixins.formatText(400, 1.6rem, 2.4rem);
       }
     }
   }
