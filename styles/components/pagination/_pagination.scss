@@ -17,7 +17,6 @@
     span svg g path {
       fill: currentColor;
     }
-    cursor: pointer;
 
     &:hover {
       color: variables.$secondary;
@@ -42,8 +41,7 @@
     &-largeprimary,
     &-largetertiary {
       box-shadow: none;
-      cursor: pointer;
-       @include mixins.formatText(400, 1.3rem, 2.4rem);
+      @include mixins.formatText(400, 1.3rem, 2.4rem);
     }
 
     //small
@@ -106,6 +104,118 @@
     &-large {
       @include mixins.size(25.5rem, 5rem);
       border-radius: 20px;
+    }
+  }
+
+  /****************** Tag **********************/
+  &__tag {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid variables.$background;
+    @include mixins.formatText(700, 1.4rem, 2.4rem);
+    @include mixins.size(6.1rem, 3rem);
+    color: variables.$primary;
+    &:hover {
+      color: variables.$white;
+      background-color: variables.$primary;
+    }
+    &:disabled {
+      color: variables.$grey;
+      border-color: variables.$background;
+      background-color: transparent;
+    }
+  }
+
+  /****************** Link **********************/
+  &__link {
+    &--header,
+    &--footer {
+      // color: red;
+      font-family: "Manrope", sans-serif;
+      @include mixins.formatText(500, 1.6rem, 2.4rem);
+      border-radius: 6px;
+      // padding: 1rem 2rem;
+      //light
+      background-color: variables.$tertiary;
+      position: relative;
+
+      //dark
+      // background-color: variables.$secondary;
+
+      &:visited,
+      &:link {
+        //light
+        color: variables.$grey;
+        //dark
+        // color: variables.$white;
+      }
+
+      &:hover,
+      &:active {
+        //light
+        color: variables.$secondary;
+        //dark
+        // color: variables.$grey;
+
+        &::after {
+          // width: 100%;
+          @include mixins.size(100%, 3px);
+        }
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        transition: width 0.25s ease-in-out;
+
+        top: 100%;
+        left: 0;
+        @include mixins.size(0%, 2px);
+        border-radius: 10px;
+        background-color: variables.$secondary;
+      }
+    }
+    &--header-active {
+      &:visited,
+      &:link {
+        //light
+        color: variables.$secondary;
+        //dark
+        // color: variables.$white;
+        // &::after {
+        //   // width: 100%;
+        //   @include mixins.size(100%, 3px);
+        // }
+        @include mixins.formatText(600, 1.6rem, 2.4rem);
+      }
+    }
+    &--footer {
+     padding: 1rem 2rem;
+      //light
+      // background-color: variables.$tertiary;
+
+      //dark
+      background-color: variables.$secondary;
+      &:hover,
+      &:active {
+        //light
+        color: variables.$helperBlue3;
+      }
+      &::after {
+        background-color: variables.$helperBlue3;
+
+      }
+      &-active{
+  //light
+  color: variables.$helperBlue3;
+  //dark
+  // color: variables.$white;
+  // &::after {
+  //   // width: 100%;
+  //   @include mixins.size(100%, 3px);
+  // }
+  @include mixins.formatText(400, 1.6rem, 2.4rem);
+      }
     }
   }
 }

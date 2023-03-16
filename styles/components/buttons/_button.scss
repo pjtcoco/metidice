@@ -11,6 +11,7 @@ button {
   letter-spacing: 0.055rem;
   border: none;
   font-style: normal;
+  cursor: pointer;
   color: variables.$white;
   @include mixins.flex;
   transition: all 0.25s ease-in-out;
