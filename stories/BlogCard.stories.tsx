@@ -24,6 +24,7 @@ export const Variant1_Big: Story = {
     type: "variant1",
     hasArrow: true,
     date: "22 June 2022",
+    title: "Staffing software: key capabilities and top products",
     children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...",
   },
 };
