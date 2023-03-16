@@ -9,7 +9,6 @@ interface TabProps {
 }
 const Tab: React.FC<TabProps> = ({ onClick, size = "medium", label, outlined = false, color, id }) => {
   const outline = outlined && size === "small";
-  console.log(outline);
   return (
     <button id={id} onClick={onClick} className={`ensome__pagination__tab-${size}${color ?? ""}${outline ? "-outlined" : ""}`}>
       {label}
