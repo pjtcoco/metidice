@@ -82,6 +82,14 @@
   // }
   /****************** variant1 **********************/
   &__variant1 {
+    &::after {
+      position: absolute;
+      top: 0.16%;
+      display: block;
+      content: "";
+      @include mixins.size(100%, 0.6rem);
+      background-color: variables.$primary;
+    }
     background-color: variables.$white;
     @include mixins.size(35rem, 39.7rem);
     align-items: flex-end;
