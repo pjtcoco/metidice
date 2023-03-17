@@ -6,13 +6,14 @@ import TextLink from "../pagination/TextLink";
 import HeadlineText from "../text/HeadlineText";
 import ParagraphText from "../text/ParagraphText";
 import { CardProps } from "./DesktopCard";
+import SolutionCardItem from "./SolutionCardItem";
 
 type TodoPreview = Omit<CardProps, "variant">;
-type SolutionCardProps = TodoPreview & {
+export type SolutionCardProps = TodoPreview & {
   variant?: "variant1" | "variant2" | "variant3";
 };
 
-const SolutionCard: React.FC<SolutionCardProps> = ({ type, icon, variant = "variant2", title, children, url }) => {
+const SolutionCard: React.FC<SolutionCardProps> = ({ icon, variant = "variant2", title, children, url }) => {
   const condition = false;
   const arrowCondition = variant === "variant2" || variant === "variant3";
 
@@ -22,27 +23,26 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ type, icon, variant = "vari
       {icon ?? <BookDatabaseIcon />}
       <HeadlineText variant="h4">{title ?? "Data integration"}</HeadlineText>
       <section>
-        <div className="ensome__solutioncard__item">
-          <CircleIcon size="small" color="primary" />
+        {children}
+        {/* <ParagraphText variant="p2-r">Extract, transform, load (ETL) or extract, load, transform (ELT); data governance (security, availability, quality) implementation.</ParagraphText> */}
+        {/* <SolutionCardItem>Extract, transform, load (ETL)</SolutionCardItem>
+        <SolutionCardItem>Extract, transform, load (ETL)</SolutionCardItem>
+        <SolutionCardItem>Extract, transform, load (ETL)</SolutionCardItem>
+        <SolutionCardItem>Extract, transform, load (ETL)</SolutionCardItem> */}
+        {/* <div className="ensome__solutioncard__item">
+          <CheckMarkIcon size="small" color="primary" />
           <ParagraphText variant="p2-r">{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
         </div>
         <div className="ensome__solutioncard__item">
-          <CircleIcon size="small" color="primary" />
+          <CheckMarkIcon size="small" color="primary" />
           <ParagraphText variant="p2-r">{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
         </div>
         <div className="ensome__solutioncard__item">
-          <CircleIcon size="small" color="primary" />
+          <CheckMarkIcon size="small" color="primary" />
           <ParagraphText variant="p2-r">{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
-        </div>
-        <div className="ensome__solutioncard__item">
-          <CircleIcon size="small" color="primary" />
-          <ParagraphText variant="p2-r">{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
-        </div>
-        
-        
+        </div> */}
       </section>
 
-      {/* <ParagraphText variant="p2-r">Extract, transform, load (ETL) or extract, load, transform (ELT); data governance (security, availability, quality) implementation.</ParagraphText> */}
       {/* <div className="ensome__solutioncard__item">
         <CheckMarkIcon color="primary" />
         <ParagraphText variant={condition ? "p3-r" : "p2-r"}>{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
@@ -51,7 +51,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ type, icon, variant = "vari
         <CheckMarkIcon color="primary" />
         <ParagraphText variant={condition ? "p3-r" : "p2-r"}>{children ?? "Extract, transform, load (ETL)"}</ParagraphText>
       </div> */}
-      {arrowCondition && <TextLink hasArrow />}
+      {arrowCondition ? <TextLink hasArrow /> : <TextLink />}
       {/* <BrainCircuitIcon /> */}
       {/* {icon ?? <BrainCircuitIcon />} */}
       {/* <HeadlineText variant={condition ? "h5" : "h4"}>{title ?? "Machine Learning"}</HeadlineText>

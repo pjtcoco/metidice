@@ -7,9 +7,8 @@ export interface CardProps {
   icon?: React.ReactNode;
   variant?: "variant1" | "variant2" | "variant3" | "variant4";
   title: string;
-  children?: React.ReactNode;
+  children?: React.ReactNode | React.ReactNode[];
   url?: string;
-  type?:"list"|"text"
 }
 const DesktopCard: React.FC<CardProps> = ({ icon, variant = "variant2", title, children, url }) => {
   const condition = variant === "variant4";
