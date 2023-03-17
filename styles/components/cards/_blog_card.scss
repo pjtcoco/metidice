@@ -125,7 +125,11 @@
     @include mixins.size(63.5rem, 49.8rem);
     section {
       padding: 0.5rem;
+      gap: 0.35rem;
       @include mixins.size(63.5rem, 13.9rem);
+      p {
+        margin: 0;
+      }
     }
     #card_image {
       background: url(/public/images/v1.png);
