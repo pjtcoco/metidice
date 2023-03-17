@@ -1,0 +1,47 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+.ensome__reviewcard {
+  &__variant1,
+  &__variant2 {
+    @include mixins.cardInit;
+    padding: 7.5rem 3.5rem 3.5rem;
+    row-gap: 3.5rem;
+    @include mixins.size(54rem, 30.9rem);
+    position: relative;
+    h6:last-child {
+      color: variables.$grey;
+    }
+    #rcard_image {
+      @include mixins.size(8rem);
+      border-radius: 100%;
+      position: absolute;
+      top: -12.5%;
+    }
+  }
+
+  &__variant2 {
+    padding: 35px;
+    row-gap: 25px;
+    column-gap: 1.5rem;
+    width: 540px;
+    height: 287px;
+    @include mixins.customgrid(4, 4, 3rem, 11rem);
+    #rcard_image {
+      grid-row: 1/3;
+      grid-column: 1/2;
+      position: relative;
+    }
+
+    p {
+      grid-row: 3/5;
+      grid-column: 1/5;
+    }
+    div {
+      grid-row: 1/3;
+      grid-column: 2/5;
+      @include mixins.flex(column);
+      align-items: flex-start;
+    margin-left: -2.5rem;
+    }
+  }
+}

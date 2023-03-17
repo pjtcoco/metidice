@@ -8,15 +8,10 @@
   &__variant4,
   &__variant5,
   &__variant6 {
-    @include mixins.flex(column);
-    align-items: flex-start;
+    @include mixins.cardInit;
     padding: 3rem 3.5rem 4.5rem;
     gap: 2rem;
     @include mixins.size(35rem, 33.1rem);
-    background: variables.$white;
-    box-shadow: variables.$shadowCard3;
-    border-radius: 6px;
-
     div {
       @include mixins.flex;
       align-items: flex-start;
@@ -29,8 +24,6 @@
       align-items: flex-start;
     }
     p {
-      letter-spacing: -0.015em;
-      color: variables.$grey;
       margin: 0;
     }
   }

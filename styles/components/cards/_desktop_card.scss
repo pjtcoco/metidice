@@ -6,17 +6,14 @@
   &__variant2,
   &__variant3,
   &__variant4 {
-    @include mixins.flex(column);
-    align-items: flex-start;
+    //initialise card
+    @include mixins.cardInit;
+
     padding: 2.5rem;
     gap: 1.5rem;
     @include mixins.size(25.5rem, 24.8rem);
-    background: variables.$white;
-    box-shadow: variables.$shadowCard3;
-    border-radius: 6px;
 
     p {
-      color: variables.$grey;
       font-family: "Open Sans 700", sans-serif;
       font-weight: 300;
     }

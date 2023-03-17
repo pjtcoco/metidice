@@ -21,7 +21,6 @@
   font-size: $fs;
   line-height: $lh;
   font-style: normal;
-
 }
 
 //sets width and height
@@ -89,7 +88,6 @@
   &__error {
     background-color: variables.$error;
   }
-  
 }
 
 @mixin iconsize($size: 2rem, $color: variables.$black) {
@@ -100,7 +98,7 @@
       fill: $color;
     }
 
-    g[class~='3d']{
+    g[class~="3d"] {
       mix-blend-mode: multiply;
     }
     // g {
@@ -184,4 +182,20 @@ $background: rgba(255, 255, 255, 1);
   );
 
   @return $all;
+}
+
+/******************************Card mixins******************************/
+@mixin cardInit() {
+  @include flex(column);
+  align-items: flex-start;
+  background: variables.$white;
+  box-shadow: variables.$shadowCard3;
+  border-radius: 6px;
+  p,
+  h6 {
+    letter-spacing: -0.015em;
+  }
+  p {
+    color: variables.$grey;
+  }
 }
