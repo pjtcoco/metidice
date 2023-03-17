@@ -4,8 +4,8 @@ import BrainCircuitIcon from "../icons/BrainCircuitIcon";
 import TextLink from "../pagination/TextLink";
 import HeadlineText from "../text/HeadlineText";
 export interface CardProps {
-  icon: React.ReactNode;
-  variant: "variant1" | "variant2" | "variant3" | "variant4";
+  icon?: React.ReactNode;
+  variant?: "variant1" | "variant2" | "variant3" | "variant4";
   title: string;
   children?: React.ReactNode;
   url?: string;

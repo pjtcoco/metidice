@@ -1,5 +1,6 @@
 "use client";
 
+import BlogCard from "@/components/cards/BlogCard";
 import DesktopCard from "@/components/cards/DesktopCard";
 import IsometricBrain3DIcon from "@/components/icons/IsometricBrain3DIcon";
 import IntLink from "@/utils/IntLink";
@@ -8,7 +9,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Index() {
-  const t = useTranslations("Index");
+  // const t = useTranslations("Index");
   const path = usePathname();
   console.log("path: ", path);
   console.log(path.slice(3 - path.length));
@@ -55,10 +56,13 @@ export default function Index() {
       <br />
       <br />
 
-      <h1>{t("title")}</h1>
-      <DesktopCard title="Machine Learning" icon={<IsometricBrain3DIcon  />} variant="variant3">
+      {/* <h1>{t("title")}</h1> */}
+      <DesktopCard title="Machine Learning" icon={<IsometricBrain3DIcon />} variant="variant3">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure.
       </DesktopCard>
+      <BlogCard date="22 June 2022" hasArrow title="Staffing software: key capabilities and top products" type="variant1">
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...
+      </BlogCard>
     </>
   );
 }

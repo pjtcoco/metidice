@@ -118,6 +118,30 @@
     }
   }
 
+  &__variant2 {
+    @media only screen and (width <= 42rem) {
+      @include mixins.size(32.8rem, 29.6rem);
+      gap: 2rem;
+      #card_image {
+        background: url(/public/images/mv2.png);
+        @include mixins.size(32.8rem, 13rem);
+      }
+
+      section {
+        margin: 0;
+        gap: 1.2rem;
+        @include mixins.size(32.8rem, 12.6rem);
+        align-self: flex-start;
+        h6 {
+          @include mixins.formatText(700, 1.6rem, 2.4rem);
+        }
+        p:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
   /****************** variant1 **********************/
   &__variant1 {
     padding: 0rem;
@@ -134,6 +158,28 @@
     #card_image {
       background: url(/public/images/v1.png);
       @include mixins.size(63.5rem, 28.5rem);
+    }
+
+    @media only screen and (width <= 42rem) {
+      @include mixins.size(32.8rem, 39.8rem);
+      gap: 1.8rem;
+      #card_image {
+        background: url(/public/images/mv1.png);
+        @include mixins.size(32.8rem, 15rem);
+      }
+
+      section {
+        margin: 0;
+        gap: 1rem;
+        @include mixins.size(32.8rem, 23rem);
+        align-self: flex-start;
+        h6 {
+          @include mixins.formatText(700, 1.6rem, 2.4rem);
+        }
+        p {
+          @include mixins.formatText(400, 1.4rem, 2.4rem);
+        }
+      }
     }
   }
 }
