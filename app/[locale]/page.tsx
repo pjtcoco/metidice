@@ -57,6 +57,10 @@ export default function Index() {
       <br />
 
       {/* <h1>{t("title")}</h1> */}
+      <BlogCard date="22 April 2022" title="Sed ut perspiciatis unde omnis at vero blanditils" type="variant4">
+        Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...
+      </BlogCard>
+      <BlogCard date="22 April 2022" hasArrow title="ISO 13485 compliance of medical devices" type="variant5" />
       <DesktopCard title="Machine Learning" icon={<IsometricBrain3DIcon />} variant="variant3">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure.
       </DesktopCard>

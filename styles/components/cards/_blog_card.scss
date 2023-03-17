@@ -68,7 +68,7 @@
     @include mixins.size(44.5rem, 12.2rem);
     #card_image {
       @include mixins.size(19rem, 11.4rem);
-      background: url(/public/images/v5.png);
+      // background: url(/public/images/v5.png);
       border-radius: 6px;
     }
     section {
@@ -87,14 +87,14 @@
       @include mixins.size(32.8rem, 10.4rem);
       gap: 0.8rem;
       #card_image {
-        background: url(/public/images/mv4.png);
+        // background: url(/public/images/mv4.png);
         @include mixins.size(16rem, 9.6rem);
       }
 
       section {
         gap: 0.6rem;
         @include mixins.size(16rem, 10.4rem);
-        padding: 0 0.5rem;
+        padding: 0rem;
         h6 {
           @include mixins.formatText(600, 1.4rem, 2.4rem);
           letter-spacing: -0.01em;
@@ -108,7 +108,7 @@
     align-items: center;
     #card_image {
       @include mixins.size(21.5rem, 17.1rem);
-      background: url(/public/images/v4.png);
+      // background: url(/public/images/v4.png);
     }
 
     section {
@@ -125,7 +125,7 @@
     @include mixins.flex(column);
     @include mixins.size(35rem, 47.8rem);
     #card_image {
-      background: url(/public/images/v3.png);
+      // background: url(/public/images/v3.png);
       @include mixins.size(35rem, 20rem);
     }
 
@@ -142,7 +142,7 @@
       @include mixins.size(27.2rem, 26.6rem);
       gap: 2rem;
       #card_image {
-        background: url(/public/images/mv3.png);
+        // background: url(/public/images/mv3.png);
         @include mixins.size(27.2rem, 13rem);
       }
 
@@ -167,7 +167,7 @@
     @include mixins.size(54rem, 61.5rem);
     align-items: flex-start;
     #card_image {
-      background: url(/public/images/v2.png);
+      // background: url(/public/images/v2.png);
       @include mixins.size(54rem, 30rem);
     }
     section {
@@ -185,7 +185,7 @@
       @include mixins.size(32.8rem, 29.6rem);
       gap: 2rem;
       #card_image {
-        background: url(/public/images/mv2.png);
+        // background: url(/public/images/mv2.png);
         @include mixins.size(32.8rem, 13rem);
       }
 
@@ -215,7 +215,7 @@
       @include mixins.size(63.5rem, 13.9rem);
     }
     #card_image {
-      background: url(/public/images/v1.png);
+      // background: url(/public/images/v1.png);
       @include mixins.size(63.5rem, 28.5rem);
     }
 
@@ -223,7 +223,7 @@
       @include mixins.size(32.8rem, 39.8rem);
       gap: 1.8rem;
       #card_image {
-        background: url(/public/images/mv1.png);
+        // background: url(/public/images/mv1.png);
         @include mixins.size(32.8rem, 15rem);
       }
 
