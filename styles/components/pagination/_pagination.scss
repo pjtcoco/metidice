@@ -5,8 +5,9 @@
   /****************** links **********************/
   &__link {
     @include mixins.size(9.235rem, 2.4rem);
+    @include mixins.size(auto, 2.4rem);
     font-family: "Manrope", sans-serif;
-    @include mixins.formatText(500, 1.25rem, 2rem);
+    @include mixins.formatText(600, 1.25rem, 2rem);
     letter-spacing: 0.055rem;
     @include mixins.flex;
     column-gap: 0.35rem;

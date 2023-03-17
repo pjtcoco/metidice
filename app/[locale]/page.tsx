@@ -2,6 +2,7 @@
 
 import BlogCard from "@/components/cards/BlogCard";
 import DesktopCard from "@/components/cards/DesktopCard";
+import SolutionCard from "@/components/cards/SolutionCard";
 import IsometricBrain3DIcon from "@/components/icons/IsometricBrain3DIcon";
 import IntLink from "@/utils/IntLink";
 import { useTranslations } from "next-intl";
@@ -54,6 +55,7 @@ export default function Index() {
 
       <Link href="/de">German</Link>
       <br />
+      <SolutionCard title="Data integration" variant="variant3" />
       <br />
 
       {/* <h1>{t("title")}</h1> */}
