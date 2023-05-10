@@ -1,0 +1,11 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.color {
+  &__container {
+    @include mixins.size(24.8rem, 14.4rem);
+    border-radius: 0.6rem;
+  }
+  @include mixins.colors;
+
+}

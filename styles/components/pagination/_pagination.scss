@@ -1,0 +1,224 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.ensome__pagination {
+  /****************** links **********************/
+  &__link {
+    @include mixins.size(9.235rem, 2.4rem);
+    @include mixins.size(auto, 2.4rem);
+    font-family: "Manrope", sans-serif;
+    @include mixins.formatText(600, 1.25rem, 2rem);
+    letter-spacing: 0.055rem;
+    @include mixins.flex;
+    column-gap: 0.35rem;
+    color: variables.$primary;
+    background-color: transparent;
+    box-shadow: none;
+    span svg path,
+    span svg g path {
+      fill: currentColor;
+    }
+    span:last-child {
+      margin-top: 0.65rem;
+    }
+
+    &:hover {
+      color: variables.$secondary;
+    }
+    &:disabled {
+      color: variables.$grey;
+    }
+  }
+
+  /****************** tabs **********************/
+  &__tab {
+    &-small,
+    &-small-outlined,
+    &-smallprimary,
+    &-smallprimary-outlined,
+    &-smalltertiary,
+    &-smalltertiary-outlined,
+    &-medium,
+    &-mediumprimary,
+    &-mediumtertiary,
+    &-large,
+    &-largeprimary,
+    &-largetertiary {
+      box-shadow: none;
+      @include mixins.formatText(400, 1.3rem, 2.4rem);
+    }
+
+    //small
+    &-small,
+    &-small-outlined,
+    &-smallprimary,
+    &-smallprimary-outlined,
+    &-smalltertiary,
+    &-smalltertiary-outlined {
+      @include mixins.size(4.1rem, 1.8rem);
+      border-radius: 6px;
+    }
+
+    //small and outlined
+    &-small-outlined,
+    &-smallprimary-outlined,
+    &-smalltertiary-outlined {
+      border: 1px solid variables.$primary;
+      background-color: transparent;
+      color: variables.$primary;
+    }
+
+    //medium
+    &-medium,
+    &-mediumprimary,
+    &-mediumtertiary {
+      @include mixins.size(9.4rem, 3.8rem);
+      border-radius: 14px;
+    }
+    &-mediumtertiary {
+      background-color: variables.$tertiary;
+      color: variables.$black;
+    }
+    //large
+    &-large,
+    &-largeprimary,
+    &-largetertiary {
+      border-radius: 20px;
+      @include mixins.size(12.5rem, 4.6rem);
+    }
+    &-largetertiary {
+      background-color: variables.$tertiary;
+      color: variables.$black;
+    }
+  }
+
+  /****************** TabSwitch **********************/
+  &__switch {
+    //mobile
+    &-medium,
+    &-large {
+      background-color: variables.$tertiary;
+
+      @include mixins.size(19rem, 4rem);
+      border-radius: 14px;
+      @include mixins.flex;
+      column-gap: 0rem;
+    }
+    //desktop
+    &-large {
+      @include mixins.size(25.5rem, 5rem);
+      border-radius: 20px;
+    }
+  }
+
+  /****************** Tag **********************/
+  &__tag {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid variables.$background;
+    @include mixins.formatText(700, 1.4rem, 2.4rem);
+    @include mixins.size(6.1rem, 3rem);
+    color: variables.$primary;
+    &:hover {
+      color: variables.$white;
+      background-color: variables.$primary;
+    }
+    &:disabled {
+      color: variables.$grey;
+      border-color: variables.$background;
+      background-color: transparent;
+    }
+  }
+
+  /****************** Link **********************/
+  &__link {
+    &--header,
+    &--footer {
+      // color: red;
+      font-family: "Manrope", sans-serif;
+      @include mixins.formatText(500, 1.6rem, 2.4rem);
+      border-radius: 6px;
+      // padding: 1rem 2rem;
+      //light
+      background-color: variables.$tertiary;
+      position: relative;
+
+      //dark
+      // background-color: variables.$secondary;
+
+      &:visited,
+      &:link {
+        //light
+        color: variables.$grey;
+        //dark
+        // color: variables.$white;
+      }
+
+      &:hover,
+      &:active {
+        //light
+        color: variables.$secondary;
+        //dark
+        // color: variables.$grey;
+
+        &::after {
+          // width: 100%;
+          @include mixins.size(100%, 3px);
+        }
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        transition: width 0.25s ease-in-out;
+
+        top: 100%;
+        left: 0;
+        @include mixins.size(0%, 2px);
+        border-radius: 10px;
+        background-color: variables.$secondary;
+      }
+    }
+    &--header-active {
+      &:visited,
+      &:link {
+        //light
+        color: variables.$secondary;
+        //dark
+        // color: variables.$white;
+        // &::after {
+        //   // width: 100%;
+        //   @include mixins.size(100%, 3px);
+        // }
+        @include mixins.formatText(600, 1.6rem, 2.4rem);
+      }
+    }
+    &--footer {
+      padding: 1rem 2rem;
+      //light
+      // background-color: variables.$tertiary;
+
+      //dark
+      background-color: variables.$secondary;
+      &:hover,
+      &:active {
+        //light
+        color: variables.$helperBlue3;
+      }
+      &::after {
+        background-color: variables.$helperBlue3;
+      }
+      &-active {
+        //light
+        color: variables.$helperBlue3;
+        //dark
+        // color: variables.$white;
+        // &::after {
+        //   // width: 100%;
+        //   @include mixins.size(100%, 3px);
+        // }
+        @include mixins.formatText(400, 1.6rem, 2.4rem);
+      }
+    }
+  }
+}

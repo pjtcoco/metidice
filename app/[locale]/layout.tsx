@@ -13,7 +13,9 @@
 //     </html>
 //   );
 // }
-
+import '../../styles/main.scss';
+import { nanoid } from "nanoid";
+export { nanoid as nano };
 import { NextIntlClientProvider } from "next-intl/client";
 import { notFound } from "next/navigation";
 export const metadata = {
@@ -35,7 +37,7 @@ type LayoutProps = {
 export default async function LocaleLayout({ children, params: { locale } }:LayoutProps) {
   let messages;
   try {
-    messages = (await import(`public/messages/home/${locale}.json`)).default;
+    messages = (await import(`../../public/messages/home/${locale}.json`)).default;
   } catch (error) {
     notFound();
   }
